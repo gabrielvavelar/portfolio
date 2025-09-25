@@ -4,10 +4,10 @@ body {
 }
 
 nav {
-    position: relative;
+    position: fixed;
     top: 3rem;
-    margin-left: 35rem;
-    margin-right: 35rem;
+    left: 35rem;
+    right: 35rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,3 +52,47 @@ nav {
     color: #ffffff;
 }
 
+#home {
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    background-color: #05070f;
+    padding: 0 2rem; 
+}
+
+#home h1 {
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+.socials {
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center; 
+    margin-bottom: 2.2rem;
+}
+
+.socials img {
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.socials img:hover {
+    transform: scale(1.15); 
+}
+
+#home button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
